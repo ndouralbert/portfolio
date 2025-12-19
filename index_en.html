@@ -675,171 +675,199 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>
-          Selected academic projects, research internships and consulting-oriented developments
-          in bioinformatics, transcriptomics, microbiome analysis and data visualization.
+          Selected academic projects, research internships and applied developments
+          in bioinformatics, transcriptomics, genomics, proteomics and data visualization.
         </p>
       </div>
       <!-- End Section Title -->
 
       <div class="container">
 
+        <!-- Isotope layout -->
         <div class="isotope-layout"
             data-default-filter="*"
             data-layout="masonry"
             data-sort="original-order">
 
-          <!-- ===== Filters ===== -->
+          <!-- Filters -->
           <ul class="portfolio-filters isotope-filters"
               data-aos="fade-up"
               data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-rnaseq">RNA-seq</li>
-            <li data-filter=".filter-microbiome">Microbiome</li>
-            <li data-filter=".filter-pipelines">Pipelines</li>
-            <li data-filter=".filter-apps">Apps & Dashboards</li>
-            <li data-filter=".filter-ml">ML / Modeling</li>
+            <li data-filter=".filter-m2">Master 2 (internship)</li>
+            <li data-filter=".filter-m1">Master 1 (internship)</li>
+            <li data-filter=".filter-bulk">Bulk RNA-seq</li>
+            <li data-filter=".filter-scrna">scRNA-seq</li>
+            <li data-filter=".filter-proteomics">Proteomics</li>
+            <li data-filter=".filter-apps">Apps / Dashboards</li>
+            <li data-filter=".filter-extra">Other projects</li>
           </ul>
           <!-- End Filters -->
 
-          <!-- ===== Portfolio Items ===== -->
+          <!-- Grid -->
           <div class="row gy-4 isotope-container"
               data-aos="fade-up"
               data-aos-delay="200">
 
-            <!-- Bulk RNA-seq -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rnaseq">
+            <!-- Proteomics – PeptideFinder -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-proteomics">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/rnaseq_bulk.png"
+                <img src="assets/img/portfolio/proteomic_img.png"
                     class="img-fluid"
-                    alt="Bulk RNA-seq analysis"
+                    alt="PeptideFinder – proteomics peptide identification"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>Bulk RNA-seq Analysis</h4>
-                  <p>Differential expression & functional analysis (R / DESeq2).</p>
-                  <a href="assets/img/portfolio/rnaseq_bulk.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="Bulk RNA-seq"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#bulk-rnaseq"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>PeptideFinder</h4>
+                  <p>Mass-spectrometry peptide identification tool.</p>
+                  <a href="assets/img/portfolio/proteomic_img.png"
+                    title="PeptideFinder – overview"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#peptidefinder"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- scRNA-seq -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rnaseq">
+            <!-- M2 — ERVs bulk RNA-seq -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-m2 filter-bulk">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/scrna_umap.png"
+                <img src="assets/img/portfolio/cycle_erv.svg"
                     class="img-fluid"
-                    alt="scRNA-seq clustering"
+                    alt="Endogenous retroviruses – RNA-seq overview"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>scRNA-seq Analysis</h4>
-                  <p>QC, clustering, annotation & UMAP visualization.</p>
-                  <a href="assets/img/portfolio/scrna_umap.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="scRNA-seq"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#scrnaseq"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>ERVs — Bulk RNA-seq</h4>
+                  <p>Expression of ERVII families in small ruminants (INRAE & LBBE).</p>
+                  <a href="assets/img/portfolio/cycle_erv.svg"
+                    title="ERVs overview"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#ervs"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Microbiome -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-microbiome">
+            <!-- M1 — TE & IIV6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-m1 filter-bulk">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/microbiome.png"
+                <img src="assets/img/portfolio/stageM1.png"
                     class="img-fluid"
-                    alt="Microbiome analysis"
+                    alt="Transposable elements and virus IIV6"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>Microbiome Profiling</h4>
-                  <p>16S / ITS analysis with QIIME2 & DADA2.</p>
-                  <a href="assets/img/portfolio/microbiome.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="Microbiome"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#microbiome"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>TE • Bulk RNA-seq</h4>
+                  <p>Transposable element insertions in a viral genome (Nanopore).</p>
+                  <a href="assets/img/portfolio/stageM1.png"
+                    title="TE analysis"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#te-iiv6"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Pipelines -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pipelines">
+            <!-- scRNA PBMC -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-scrna">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pipeline.png"
+                <img src="assets/img/portfolio/pbmc3k_umap.jpg"
                     class="img-fluid"
-                    alt="Snakemake pipeline"
+                    alt="scRNA-seq PBMC clustering"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>Reproducible Pipelines</h4>
-                  <p>Snakemake workflows for RNA-seq & genomics.</p>
-                  <a href="assets/img/portfolio/pipeline.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="Pipeline"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#pipelines"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>scRNA-seq — PBMC</h4>
+                  <p>Quality control, clustering and immune cell annotation.</p>
+                  <a href="assets/img/portfolio/pbmc3k_umap.jpg"
+                    title="PBMC UMAP"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#scrna-pbmc"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Apps -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
+            <!-- Pipeline RNA-seq -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-m2 filter-bulk filter-apps">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/dashboard.png"
+                <img src="assets/img/portfolio/pipeline_ivpc.png"
                     class="img-fluid"
-                    alt="Bioinformatics dashboard"
+                    alt="RNA-seq pipeline automation"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>Interactive Dashboards</h4>
-                  <p>Flask / Shiny apps for omics data exploration.</p>
-                  <a href="assets/img/portfolio/dashboard.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="Dashboard"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#apps"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>RNA-seq Pipeline</h4>
+                  <p>Snakemake workflow with Flask-based visualization.</p>
+                  <a href="assets/img/portfolio/pipeline_ivpc.png"
+                    title="Pipeline"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#rnaseq-pipeline"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- ML -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+            <!-- scRNA QC -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-scrna">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/ml_model.png"
+                <img src="assets/img/portfolio/qc_rnaseq.png"
                     class="img-fluid"
-                    alt="Machine learning modeling"
+                    alt="scRNA-seq quality control"
                     loading="lazy">
                 <div class="portfolio-info">
-                  <h4>Modeling & Machine Learning</h4>
-                  <p>Predictive models applied to biological data.</p>
-                  <a href="assets/img/portfolio/ml_model.png"
-                    data-gallery="portfolio-gallery"
-                    class="glightbox preview-link"
-                    title="ML"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#ml"
-                    class="details-link"
-                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                  <h4>scRNA-seq — QC</h4>
+                  <p>Filtering, mitochondrial rate and UMI distributions.</p>
+                  <a href="assets/img/portfolio/qc_rnaseq.png"
+                    title="scRNA QC"
+                    data-gallery="portfolioGallery"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html#scrna-qc"
+                    title="Details"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
           </div>
-          <!-- End Portfolio Container -->
+          <!-- End Grid -->
 
         </div>
+        <!-- /Isotope -->
 
       </div>
-
     </section>
+
     <!-- ================== /Portfolio Section ================== -->
 
     <!-- ================== Services Section ================== -->

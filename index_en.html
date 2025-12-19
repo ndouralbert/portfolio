@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Charset & viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title (SEO ≤ 60 caractères) -->
+  <title>Albert NDOUR — Consultant en Bioinformatique & Data Science</title>
+
+  <!-- Meta SEO -->
+  <meta name="description"
+        content="Consultant freelance en bioinformatique : microbiome (16S/ITS), RNA-seq, métagénomique et data science pour la recherche académique et industrielle.">
+  <meta name="keywords"
+        content="consultant bioinformatique, freelance bioinfo, microbiome, 16S, ITS, RNA-seq, scRNA-seq, métagénomique, QIIME2, DADA2, machine learning, R, Python">
+
+  <!-- SEO multilingue -->
+  <link rel="canonical" href="https://votresite.com/">
+  <link rel="alternate" hreflang="fr" href="https://votresite.com/index.html">
+  <link rel="alternate" hreflang="en" href="https://votresite.com/index-en.html">
+  <meta name="robots" content="index,follow">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- UI -->
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph (LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Albert NDOUR — Consultant en Bioinformatique">
+  <meta property="og:description"
+        content="Services freelance en bioinformatique : microbiome, RNA-seq, pipelines reproductibles et analyses avancées.">
+  <meta property="og:image" content="https://votresite.com/assets/img/og-cover.jpg">
+  <meta property="og:url" content="https://votresite.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- JSON-LD : Person (Consultant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Albert NDOUR",
+    "jobTitle": "Bioinformatics Consultant",
+    "url": "https://votresite.com/",
+    "image": "https://votresite.com/assets/img/Maphoto.jpeg",
+    "sameAs": [
+      "https://www.linkedin.com/in/albert-ndour-b800a8223/",
+      "https://github.com/albert-ndour"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Québec",
+      "addressRegion": "QC",
+      "addressCountry": "CA"
+    },
+    "knowsAbout": [
+      "Microbiome",
+      "16S",
+      "ITS",
+      "Metagenomics",
+      "RNA-seq",
+      "scRNA-seq",
+      "QIIME2",
+      "DADA2",
+      "Pipeline automation",
+      "Machine Learning",
+      "Deep Learning",
+      "R",
+      "Python",
+      "Snakemake",
+      "Nextflow",
+      "Docker"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "category": "Bioinformatics Consulting",
+      "areaServed": "Worldwide",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!--
+    Template: iPortfolio (BootstrapMade)
+    License: https://bootstrapmade.com/license/
+  -->
+</head>
+
+
+<body class="index-page">
+
+<header id="header" class="header dark-background d-flex flex-column">
+
+  <!-- Mobile menu toggle -->
+  <i class="header-toggle d-xl-none bi bi-list" aria-label="Open navigation menu"></i>
+
+  <!-- Profile image -->
+  <div class="profile-img">
+    <img src="assets/img/Maphoto.jpeg"
+         alt="Profile photo of Albert NDOUR, Bioinformatics Consultant"
+         class="img-fluid rounded-circle"
+         loading="lazy"
+         width="160"
+         height="160">
+  </div>
+
+  <!-- Name / Logo -->
+  <a href="index_en.html"
+     class="logo d-flex align-items-center justify-content-center"
+     aria-label="Homepage">
+    <h1 class="sitename">Albert NDOUR</h1>
+  </a>
+
+  <!-- Social links -->
+  <div class="social-links text-center">
+    <a href="https://www.linkedin.com/in/albert-ndour-b800a8223/"
+       class="linkedin"
+       aria-label="Albert NDOUR on LinkedIn"
+       target="_blank"
+       rel="noopener">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+
+  <!-- Language switcher -->
+  <div class="language-switcher text-center mt-2">
+    <a href="index.html"
+       class="lang-link me-2"
+       lang="fr"
+       hreflang="fr">FR</a>
+    |
+    <a href="index_en.html"
+       class="lang-link ms-2"
+       lang="en"
+       hreflang="en">EN</a>
+  </div>
+
+  <!-- Main navigation -->
+  <nav id="navmenu" class="navmenu" aria-label="Main navigation">
+    <ul>
+      <li>
+        <a href="#hero" class="active" aria-current="page">
+          <i class="bi bi-house navicon"></i> Home
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <i class="bi bi-person navicon"></i> About
+        </a>
+      </li>
+      <li>
+        <a href="#resume">
+          <i class="bi bi-file-earmark-text navicon"></i> Resume
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio">
+          <i class="bi bi-images navicon"></i> Projects
+        </a>
+      </li>
+      <li>
+        <a href="#localisation">
+          <i class="bi bi-geo-alt navicon"></i> Québec, Canada
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i class="bi bi-envelope navicon"></i> Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Live clock -->
+  <div class="text-center mt-3">
+    <span id="live-clock"
+          class="small text-white-50"
+          aria-live="polite"></span>
+  </div>
+
+</header>
+
+
+
+  <main class="main">
+
+    <!-- ================== Hero Section ================== -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/Helice_PC.png"
+          alt="DNA structure illustration representing bioinformatics and genomics"
+          data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Albert NDOUR</h2>
+
+        <p>
+          I'm a
+          <span class="typed"
+                data-typed-items="
+                  Bioinformatics Consultant,
+                  Microbiome & Metagenomics Specialist,
+                  RNA-seq & scRNA-seq Analyst,
+                  Data Scientist for Health & Agriculture">
+          </span>
+        </p>
+      </div>
+
+    </section>
+    <!-- ================== /Hero Section ================== -->
+
+
+    <!-- ================== About Section ================== -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          Bioinformatics consultant with a strong background in microbiome analysis,
+          transcriptomics and predictive modeling.
+          I help researchers, laboratories and organizations transform biological data
+          into actionable scientific insights.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+
+          <!-- Profile image -->
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/accueil4.jpg"
+                class="img-fluid rounded-3"
+                alt="Albert NDOUR, bioinformatics consultant">
+          </div>
+
+          <!-- Content -->
+          <div class="col-lg-8 content">
+
+            <h3 class="fw-bold mb-3">
+              Bioinformatics Consultant • Microbiome, RNA-seq & Data Science
+            </h3>
+
+            <p class="fst-italic mb-3">
+              Specialized in reproducible bioinformatics pipelines, statistical analysis
+              and machine learning approaches applied to health, agriculture and environmental sciences.
+            </p>
+
+            <!-- Key information -->
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <strong>Location:</strong>
+                    <span>Québec (Laval), Canada</span>
+                  </li>
+                  <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:albert.ndour.1@ulaval.ca">albert.ndour.1@ulaval.ca</a>
+                  </li>
+                  <li>
+                    <strong>Expertise:</strong>
+                    <span>Microbiome, RNA-seq, scRNA-seq</span>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong>
+                    <span>MSc Bioinformatics</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Tools:</strong>
+                    <span>QIIME2, DADA2, R, Python, Snakemake</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Availability:</strong>
+                    <span>Consulting / Freelance</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Closing paragraph -->
+            <p class="mt-3">
+              My work focuses on delivering robust, reproducible and interpretable analyses,
+              from raw sequencing data to biological interpretation.
+              I value clarity, transparency and scientific rigor in every project.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /About Section ================== -->
+
+
+    <!-- ================== Stats Section ================== -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center text-center">
+
+          <!-- Projets -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-diagram-3"></i>
+              <span data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"></span>
+              <p>
+                <strong>Bioinformatics Projects</strong><br>
+                <span>Academic & applied research</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Heures d’analyse -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-clock-history"></i>
+              <span data-purecounter-start="0"
+                    data-purecounter-end="1200"
+                    data-purecounter-duration="1"
+                    class="purecounter"></span>
+              <p>
+                <strong>Analysis Hours</strong><br>
+                <span>NGS & multi-omics</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Jeux de données -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-database"></i>
+              <span data-purecounter-start="0"
+                    data-purecounter-end="40"
+                    data-purecounter-duration="1"
+                    class="purecounter"></span>
+              <p>
+                <strong>Datasets Processed</strong><br>
+                <span>RNA-seq, microbiome, genomics</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Outils -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-tools"></i>
+              <span data-purecounter-start="0"
+                    data-purecounter-end="20"
+                    data-purecounter-duration="1"
+                    class="purecounter"></span>
+              <p>
+                <strong>Tools & Pipelines</strong><br>
+                <span>QIIME2, Snakemake, R, Python</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /Stats Section ================== -->
+
+
+    <!-- ================== Skills Section ================== -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>
+          Technical expertise developed through academic research,
+          applied projects and consulting-oriented bioinformatics workflows.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 skills-content skills-animation">
+
+          <!-- ===== Column 1 ===== -->
+          <div class="col-lg-6">
+
+            <!-- Programming -->
+            <div class="progress">
+              <span class="skill">
+                <span>Programming (Python, R, Bash)</span>
+                <i class="val">95%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!-- Bioinformatics -->
+            <div class="progress">
+              <span class="skill">
+                <span>Bioinformatics & NGS Analysis</span>
+                <i class="val">90%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!-- Microbiome -->
+            <div class="progress">
+              <span class="skill">
+                <span>Microbiome & Metagenomics</span>
+                <i class="val">88%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="88"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ===== Column 2 ===== -->
+          <div class="col-lg-6">
+
+            <!-- Transcriptomics -->
+            <div class="progress">
+              <span class="skill">
+                <span>RNA-seq & scRNA-seq</span>
+                <i class="val">85%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!-- Pipelines -->
+            <div class="progress">
+              <span class="skill">
+                <span>Reproducible Pipelines</span>
+                <i class="val">90%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="progress">
+              <span class="skill">
+                <span>Statistics & Machine Learning</span>
+                <i class="val">80%</i>
+              </span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /Skills Section ================== -->
+
+    <!-- ================== Resume Section ================== -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>
+          Bioinformatician specialized in microbiome, transcriptomics (bulk & single-cell),
+          and reproducible data analysis pipelines for academic research and applied consulting.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+
+          <!-- ===== Left column : Summary & Education ===== -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Albert NDOUR</h4>
+              <p>
+                <em>
+                  Bioinformatics consultant & research-oriented data scientist with strong expertise
+                  in multi-omics analysis, microbiome profiling and RNA-seq workflows.
+                </em>
+              </p>
+              <ul class="list-adn">
+                <li>Québec (Laval), Canada</li>
+                <li><a href="mailto:albert.ndour.1@ulaval.ca">albert.ndour.1@ulaval.ca</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/albert-ndour-b800a8223/"
+                    target="_blank" rel="noopener">
+                    linkedin.com/in/albert-ndour
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item">
+              <h4>Master 2 — Bioinformatics (Work-study)</h4>
+              <h5>2024 – Present</h5>
+              <p><em>Université Laval / Université Claude Bernard Lyon 1</em></p>
+              <ul class="list-adn">
+                <li>Advanced bioinformatics, statistics and machine learning</li>
+                <li>Multi-omics data integration and modeling</li>
+                <li>Applied research in health & agricultural data</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Master 1 — Bioinformatics</h4>
+              <h5>2023 – 2024</h5>
+              <p><em>Université Claude Bernard Lyon 1 — France</em></p>
+              <ul class="list-adn">
+                <li>NGS data analysis (RNA-seq, genomics)</li>
+                <li>Pipeline development (Snakemake, R, Python)</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Licence — Bioinformatics, Biology & Mathematics</h4>
+              <h5>2022 – 2023</h5>
+              <p><em>Université Côte d’Azur — France</em></p>
+            </div>
+
+          </div>
+
+          <!-- ===== Right column : Experience ===== -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Bioinformatics Consultant / Research Intern</h4>
+              <h5>2024 – Present</h5>
+              <p><em>Centre Léon Bérard & Academic Partners</em></p>
+              <ul class="list-adn">
+                <li>Development of interactive tools for bulk RNA-seq analysis</li>
+                <li>Design and generalization of reproducible analysis pipelines</li>
+                <li>Transcriptomic data interpretation for biomedical research</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bioinformatics Intern — Transcriptomics</h4>
+              <h5>2024</h5>
+              <p><em>Centre Léon Bérard — Lyon</em></p>
+              <ul class="list-adn">
+                <li>Bulk RNA-seq data processing and differential expression analysis</li>
+                <li>Development of a web interface for data exploration</li>
+                <li>Automation of workflows using R and Python</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bioinformatics Intern — Genomics & Databases</h4>
+              <h5>2021 – 2022</h5>
+              <p><em>INRAE / UCAD — Senegal & France</em></p>
+              <ul class="list-adn">
+                <li>Genetic diversity and evolutionary analysis (HIV-1, gene pol)</li>
+                <li>Biological database curation and quality control</li>
+                <li>PCR data handling and genomic annotation</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /Resume Section ================== -->
+
+
+    <!-- ================== Portfolio Section ================== -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>
+          Selected academic projects, research internships and consulting-oriented developments
+          in bioinformatics, transcriptomics, microbiome analysis and data visualization.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order">
+
+          <!-- ===== Filters ===== -->
+          <ul class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-rnaseq">RNA-seq</li>
+            <li data-filter=".filter-microbiome">Microbiome</li>
+            <li data-filter=".filter-pipelines">Pipelines</li>
+            <li data-filter=".filter-apps">Apps & Dashboards</li>
+            <li data-filter=".filter-ml">ML / Modeling</li>
+          </ul>
+          <!-- End Filters -->
+
+          <!-- ===== Portfolio Items ===== -->
+          <div class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200">
+
+            <!-- Bulk RNA-seq -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rnaseq">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/rnaseq_bulk.png"
+                    class="img-fluid"
+                    alt="Bulk RNA-seq analysis"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Bulk RNA-seq Analysis</h4>
+                  <p>Differential expression & functional analysis (R / DESeq2).</p>
+                  <a href="assets/img/portfolio/rnaseq_bulk.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="Bulk RNA-seq"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#bulk-rnaseq"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- scRNA-seq -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rnaseq">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/scrna_umap.png"
+                    class="img-fluid"
+                    alt="scRNA-seq clustering"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>scRNA-seq Analysis</h4>
+                  <p>QC, clustering, annotation & UMAP visualization.</p>
+                  <a href="assets/img/portfolio/scrna_umap.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="scRNA-seq"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#scrnaseq"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Microbiome -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-microbiome">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/microbiome.png"
+                    class="img-fluid"
+                    alt="Microbiome analysis"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Microbiome Profiling</h4>
+                  <p>16S / ITS analysis with QIIME2 & DADA2.</p>
+                  <a href="assets/img/portfolio/microbiome.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="Microbiome"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#microbiome"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pipelines -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pipelines">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/pipeline.png"
+                    class="img-fluid"
+                    alt="Snakemake pipeline"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Reproducible Pipelines</h4>
+                  <p>Snakemake workflows for RNA-seq & genomics.</p>
+                  <a href="assets/img/portfolio/pipeline.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="Pipeline"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#pipelines"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Apps -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/dashboard.png"
+                    class="img-fluid"
+                    alt="Bioinformatics dashboard"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Interactive Dashboards</h4>
+                  <p>Flask / Shiny apps for omics data exploration.</p>
+                  <a href="assets/img/portfolio/dashboard.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="Dashboard"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#apps"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ML -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/ml_model.png"
+                    class="img-fluid"
+                    alt="Machine learning modeling"
+                    loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Modeling & Machine Learning</h4>
+                  <p>Predictive models applied to biological data.</p>
+                  <a href="assets/img/portfolio/ml_model.png"
+                    data-gallery="portfolio-gallery"
+                    class="glightbox preview-link"
+                    title="ML"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#ml"
+                    class="details-link"
+                    title="Details"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- ================== /Portfolio Section ================== -->
+
+    <!-- ================== Services Section ================== -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>
+          J’accompagne chercheurs, laboratoires et projets interdisciplinaires
+          dans l’analyse, l’interprétation et la valorisation de données biologiques
+          complexes, avec une approche rigoureuse, reproductible et orientée résultats.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- RNA-seq -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-activity"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#rnaseq" class="stretched-link">
+                  RNA-seq & Transcriptomics
+                </a>
+              </h4>
+              <p class="description">
+                Analyse bulk RNA-seq et scRNA-seq : contrôle qualité, normalisation,
+                analyses différentielles, annotation fonctionnelle et visualisations.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Microbiome -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#microbiome" class="stretched-link">
+                  Microbiome & Métagénomique
+                </a>
+              </h4>
+              <p class="description">
+                Analyses 16S / ITS avec QIIME2 & DADA2 :
+                diversité alpha/bêta, taxonomie, statistiques multivariées
+                et intégration de métadonnées environnementales.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Pipelines -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-gear"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#pipelines" class="stretched-link">
+                  Pipelines reproductibles
+                </a>
+              </h4>
+              <p class="description">
+                Conception et automatisation de workflows bioinformatiques
+                avec Snakemake / Nextflow, gestion des dépendances et exécution HPC.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Data Science -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#datascience" class="stretched-link">
+                  Data Science & Modélisation
+                </a>
+              </h4>
+              <p class="description">
+                Analyses statistiques, machine learning et modélisation prédictive
+                appliquées aux données biologiques et environnementales.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Visualisation -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-pie-chart"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#visualisation" class="stretched-link">
+                  Visualisation & Reporting
+                </a>
+              </h4>
+              <p class="description">
+                Figures publication-ready, dashboards interactifs (R Shiny, Flask),
+                rapports clairs et reproductibles pour la recherche et la décision.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Accompagnement -->
+          <div class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a href="service-details.html#support" class="stretched-link">
+                  Accompagnement & Expertise
+                </a>
+              </h4>
+              <p class="description">
+                Aide à la conception expérimentale, relecture méthodologique,
+                support bioinformatique et formation personnalisée.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /Services Section ================== -->
+
+
+    <!-- ================== /Testimonials Section  ================== -->
+
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>
+          Research-focused profile — early-stage consulting & academic collaborations.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": false,
+              "speed": 600,
+              "autoplay": false,
+              "slidesPerView": 1,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <!-- Placeholder testimonial -->
+            <div class="swiper-slide">
+              <div class="testimonial-item text-center">
+
+                <p class="fst-italic">
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    Testimonials will be added as consulting missions and research collaborations progress.
+                    <br><br>
+                    Current work focuses on microbiome analysis, RNA-seq pipelines,
+                    reproducible workflows, and data-driven biological interpretation.
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
+                <i class="bi bi-shield-check text-info fs-2 my-3"></i>
+
+                <h3>Transparent & Research-Driven Approach</h3>
+                <h4>Microbiome • RNA-seq • Bioinformatics Consulting</h4>
+
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================== /Testimonials Section  ================== -->
+
+
+    <!-- ================== Contact Section ================== -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+          Pour toute collaboration en bioinformatique, microbiome ou RNA-seq,
+          n’hésitez pas à me contacter. Réponse rapide.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- ======= Contact Info ======= -->
+          <div class="col-lg-5">
+            <div class="info-wrap">
+
+              <!-- Location -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Localisation</h3>
+                  <p>Québec (Laval) — Pavillon Ernest-Lemieux, Canada</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>
+                    <a href="mailto:albert.ndour.1@ulaval.ca">
+                      albert.ndour.1@ulaval.ca
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p>
+                    <a href="https://www.linkedin.com/in/albert-ndour-b800a8223/"
+                      target="_blank"
+                      rel="noopener">
+                      linkedin.com/in/albert-ndour
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Map (Québec / Laval) -->
+              <div class="mt-3">
+                <iframe
+                  title="Carte – Québec (Laval)"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-71.30%2C46.76%2C-71.23%2C46.82&layer=mapnik&marker=46.781%2C-71.276"
+                  style="border:0; width:100%; height:270px;"
+                  loading="lazy">
+                </iframe>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ======= Call to Action (remplace le faux formulaire) ======= -->
+          <div class="col-lg-7">
+            <div class="p-4 rounded-3"
+                style="background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);">
+
+              <h4 class="mb-2">Un projet ou une collaboration&nbsp;?</h4>
+              <p class="mb-3">
+                Analyse microbiome, RNA-seq, pipelines reproductibles ou
+                accompagnement méthodologique en bioinformatique.
+              </p>
+
+              <a class="btn btn-info text-white"
+                href="mailto:albert.ndour.1@ulaval.ca">
+                <i class="bi bi-envelope me-2"></i> Me contacter par e-mail
+              </a>
+
+              <a class="btn btn-outline-info ms-2"
+                href="https://www.linkedin.com/in/albert-ndour-b800a8223/"
+                target="_blank"
+                rel="noopener">
+                <i class="bi bi-linkedin me-2"></i> Message LinkedIn
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ================== /Contact Section ================== -->
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

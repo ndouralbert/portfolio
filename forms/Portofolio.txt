@@ -1,0 +1,202 @@
+============================================================
+DÉPLOIEMENT ET MISE À JOUR D’UN SITE PORTFOLIO
+GitHub Pages — Albert NDOUR
+============================================================
+
+Ce document décrit TOUTES les étapes suivies pour :
+- mettre un site portfolio en ligne avec GitHub Pages
+- configurer Git localement
+- pousser le code
+- mettre à jour le site après déploiement
+
+------------------------------------------------------------
+1. PRÉREQUIS
+------------------------------------------------------------
+
+- Un compte GitHub
+- Git installé sur la machine
+- Un dossier contenant le site web :
+  - index.html
+  - assets/
+  - autres pages HTML (portfolio, services, etc.)
+
+------------------------------------------------------------
+2. CRÉATION DU DÉPÔT GITHUB
+------------------------------------------------------------
+
+1. Aller sur https://github.com
+2. Créer un nouveau repository :
+   - Nom : portfolio
+   - Visibilité : Public
+   - Ne PAS ajouter README automatiquement
+
+URL du dépôt :
+https://github.com/ndouralbert/portfolio
+
+------------------------------------------------------------
+3. INITIALISATION DU DÉPÔT GIT EN LOCAL
+------------------------------------------------------------
+
+Se placer dans le dossier du projet :
+
+cd ~/chemin/vers/iPortfolio/
+
+Initialiser Git :
+
+git init
+
+Renommer la branche en main (recommandé) :
+
+git branch -M main
+
+------------------------------------------------------------
+4. AJOUT DES FICHIERS ET PREMIER COMMIT
+------------------------------------------------------------
+
+Vérifier l’état des fichiers :
+
+git status
+
+Ajouter tous les fichiers :
+
+git add .
+
+Créer le premier commit :
+
+git commit -m "Initial commit - portfolio bioinformatique"
+
+------------------------------------------------------------
+5. CONFIGURATION DE L’IDENTITÉ GIT (SI NÉCESSAIRE)
+------------------------------------------------------------
+
+Si Git demande l’identité :
+
+git config --global user.name "Albert NDOUR"
+git config --global user.email "albertndour96@gmail.com"
+
+------------------------------------------------------------
+6. CONFIGURATION DE L’AUTHENTIFICATION SSH
+------------------------------------------------------------
+
+Créer une clé SSH :
+
+ssh-keygen -t ed25519 -C "albertndour96@gmail.com"
+
+Démarrer l’agent SSH :
+
+eval "$(ssh-agent -s)"
+
+Ajouter la clé :
+
+ssh-add ~/.ssh/id_ed25519
+
+Afficher la clé publique :
+
+cat ~/.ssh/id_ed25519.pub
+
+Copier la clé et l’ajouter sur GitHub :
+Settings → SSH and GPG keys → New SSH key
+
+------------------------------------------------------------
+7. AJOUT DU REMOTE GITHUB
+------------------------------------------------------------
+
+Définir le remote (SSH) :
+
+git remote set-url origin git@github.com:ndouralbert/portfolio.git
+
+Vérifier :
+
+git remote -v
+
+------------------------------------------------------------
+8. PUSH DU CODE SUR GITHUB
+------------------------------------------------------------
+
+Envoyer le code :
+
+git push -u origin main
+
+Résultat :
+- Les fichiers sont maintenant sur GitHub
+- La branche main est suivie par origin/main
+
+------------------------------------------------------------
+9. ACTIVATION DE GITHUB PAGES
+------------------------------------------------------------
+
+Sur GitHub :
+Repository → Settings → Pages
+
+Configuration :
+- Source : Deploy from a branch
+- Branch : main
+- Folder : / (root)
+- Cliquer sur Save
+
+GitHub génère automatiquement le site.
+
+URL du site :
+https://ndouralbert.github.io/portfolio/
+
+------------------------------------------------------------
+10. MISE À JOUR DU SITE (PROCÉDURE STANDARD)
+------------------------------------------------------------
+
+À CHAQUE modification du site :
+
+1. Modifier les fichiers (HTML, CSS, images…)
+
+2. Vérifier les changements :
+
+git status
+
+3. Ajouter les fichiers :
+
+git add .
+
+4. Créer un commit :
+
+git commit -m "Message clair de mise à jour"
+
+Exemples :
+- "Mise à jour page d'accueil"
+- "Nouvelle image hero bioinformatique"
+- "Amélioration design portfolio"
+
+5. Envoyer sur GitHub :
+
+git push
+
+------------------------------------------------------------
+11. DÉPLOIEMENT AUTOMATIQUE
+------------------------------------------------------------
+
+Après le push :
+- GitHub Pages reconstruit le site automatiquement
+- Délai : 30 à 90 secondes
+
+Si le changement n’apparaît pas :
+- Ctrl + F5
+- ou navigation privée
+
+------------------------------------------------------------
+12. COMMANDES UTILES
+------------------------------------------------------------
+
+Voir l’historique des commits :
+git log --oneline
+
+Voir les différences avant commit :
+git diff
+
+Annuler une modification locale :
+git checkout -- nom_du_fichier
+
+------------------------------------------------------------
+FIN DU DOCUMENT
+------------------------------------------------------------
+Portfolio bioinformatique — Albert NDOUR
+Déploiement propre, reproductible et professionnel
+============================================================
+

@@ -229,95 +229,122 @@
 
 
     <!-- ================== About Section ================== -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
+    <section id="about" class="about section py-5">
+      <!-- Section title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
-          Bioinformatics consultant with a strong background in microbiome analysis,
-          transcriptomics and predictive modeling.
-          I help researchers, laboratories and organizations transform biological data
-          into actionable scientific insights.
+        <h2 class="mb-2">About</h2>
+        <p class="mb-0">
+          Master’s student in Bioinformatics, specialized in multi-omics data analysis
+          and automated tool development.
+          I design solutions at the interface of biology, data science and software development
+          to turn complex biological data into meaningful insights.
         </p>
       </div>
-      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center">
+        <div class="row gx-5">
 
-          <!-- Profile image -->
-          <div class="col-lg-4 text-center">
-            <img src="assets/img/accueil4.jpg"
-                class="img-fluid rounded-3"
-                alt="Albert NDOUR, bioinformatics consultant">
-          </div>
+          <!-- LEFT ASIDE : profile image -->
+          <aside class="col-12 col-lg-3 order-2 order-lg-1 about-aside">
+            <figure class="about-photo mb-4">
+              <img src="assets/img/accueil4.jpg"
+                  class="img-fluid w-100 rounded-3"
+                  alt="Portrait of Albert NDOUR, bioinformatician">
+            </figure>
+          </aside>
 
-          <!-- Content -->
-          <div class="col-lg-8 content">
-
+          <!-- MAIN CONTENT -->
+          <div class="col-12 col-lg-9 order-1 order-lg-2 content">
             <h3 class="fw-bold mb-3">
-              Bioinformatics Consultant • Microbiome, RNA-seq & Data Science
+              Bioinformatician • Multi-omics & RNA-seq Specialist
             </h3>
 
-            <p class="fst-italic mb-3">
-              Specialized in reproducible bioinformatics pipelines, statistical analysis
-              and machine learning approaches applied to health, agriculture and environmental sciences.
+            <p class="text-muted mb-4">
+              Aspiring Bioinformatics Engineer and Data Scientist.
+              Focused on reproducible pipelines (Nextflow, Snakemake),
+              NGS analyses (bulk RNA-seq, scRNA-seq, spatial transcriptomics)
+              and data visualization using R and Python to support data-driven decisions
+              in health, agriculture and environmental sciences.
             </p>
 
-            <!-- Key information -->
+            <!-- INFORMATION LISTS -->
             <div class="row">
               <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li>
-                    <strong>Location:</strong>
-                    <span>Québec (Laval), Canada</span>
-                  </li>
-                  <li>
-                    <strong>Email:</strong>
-                    <a href="mailto:albert.ndour.1@ulaval.ca">albert.ndour.1@ulaval.ca</a>
-                  </li>
-                  <li>
-                    <strong>Expertise:</strong>
-                    <span>Microbiome, RNA-seq, scRNA-seq</span>
-                  </li>
-                </ul>
-
-              </div>
-
-              <div class="col-md-6">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled info-list vstack gap-2">
                   <li>
                     <i class="bi bi-chevron-right"></i>
                     <strong>Degree:</strong>
-                    <span>MSc Bioinformatics</span>
+                    <a href="https://www.bioinfo-lyon.fr/"
+                      target="_blank"
+                      rel="noopener"
+                      class="text-decoration-none link-info">
+                      MSc Bioinformatics (in progress)
+                    </a>
                   </li>
+
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Tools:</strong>
-                    <span>QIIME2, DADA2, R, Python, Snakemake</span>
+                    <strong>Phone:</strong>
+                    <a href="tel:+14184556406"
+                      class="text-decoration-none link-info">
+                      +1&nbsp;418&nbsp;455&nbsp;6406
+                    </a>
                   </li>
+
                   <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Availability:</strong>
-                    <span>Consulting / Freelance</span>
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <strong class="me-2">Location:</strong>
+                    <span>Québec (Laval), Canada</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-6">
+                <ul class="list-unstyled info-list vstack gap-2">
+                  <li>
+                    <i class="bi bi-building me-2 text-info"></i>
+                    <strong class="me-2">Institution:</strong>
+                    <a href="https://www.ulaval.ca/"
+                      target="_blank"
+                      rel="noopener"
+                      class="text-decoration-none link-info">
+                      Université Laval
+                    </a>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-envelope me-2 text-info"></i>
+                    <strong class="me-2">Email:</strong>
+                    <a href="mailto:albert.ndour.1@ulaval.ca"
+                      class="text-decoration-none link-info">
+                      albert.ndour.1@ulaval.ca
+                    </a>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-translate me-2 text-info"></i>
+                    <strong class="me-2">Languages:</strong>
+                    <span>French (native), English (B2)</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <!-- Closing paragraph -->
-            <p class="mt-3">
-              My work focuses on delivering robust, reproducible and interpretable analyses,
-              from raw sequencing data to biological interpretation.
-              I value clarity, transparency and scientific rigor in every project.
-            </p>
+            <!-- CLOSING PARAGRAPH -->
+            <div class="mt-3">
+              <p class="mb-0">
+                I view bioinformatics as a bridge between science, technology and societal impact.
+                My long-term vision is to contribute to advances in biomedical and ecological research,
+                while building an African bioinformatics platform capable of delivering concrete solutions
+                to major health and environmental challenges.
+              </p>
+            </div>
 
           </div>
         </div>
       </div>
-
     </section>
+
     <!-- ================== /About Section ================== -->
 
 

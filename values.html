@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Racines, valeurs & manifeste — Albert NDOUR</title>
+
+  <meta name="description"
+        content="Manifeste académique africain d’Albert NDOUR : valeurs sérères, patience, collectif, éthique, épreuves et savoir, de Ngohé (Mbindo) à l’international.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons (OBLIGATOIRE pour bi-house) -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+/* =========================
+   BASE GÉNÉRALE
+   ========================= */
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* =========================
+   SECTIONS AVEC IMAGES
+   ========================= */
+
+.image-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6rem 0;
+}
+
+.overlay {
+  background: rgba(2, 6, 23, 0.75);
+  padding: 3rem;
+  border-radius: 14px;
+  max-width: 760px;
+  color: #f8fafc;
+}
+
+/* =========================
+   TYPOGRAPHIE — TITRES
+   ========================= */
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* 🔹 TITRE PRINCIPAL — BLANC, CENTRÉ */
+.page-title-center {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+/* Titres de sections : dégradé discret */
+.overlay h1,
+.overlay h2 {
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #4ade80
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =========================
+   TEXTE COURANT
+   ========================= */
+
+.manifest-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+  color: #e5e7eb;
+}
+
+.proverb-context {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   PROVERBES — OR AFRICAIN
+   ========================= */
+
+.proverb-box {
+  border-left: 4px solid #facc15; /* or chaud */
+  padding-left: 1.5rem;
+  margin: 2.2rem 0 1rem 0;
+
+  font-style: italic;
+  font-weight: 500;
+
+  color: #facc15; /* GOLD visible */
+  text-shadow: 0 0 6px rgba(250,204,21,0.25);
+}
+
+
+/* =========================
+   IMAGE FLOTTANTE
+   ========================= */
+
+.image-circle {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #22c55e;
+  box-shadow: 0 0 40px rgba(34,197,94,0.45);
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.6s ease, background-image 0.6s ease;
+  z-index: 999;
+}
+
+.image-circle.active {
+  opacity: 1;
+}
+
+/* =========================
+   BARRE DE TITRE
+   ========================= */
+
+.page-title.service-hero {
+  background: #020617;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+}
+
+.page-title-layout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* =========================
+   LOGO / SYMBOLE
+   ========================= */
+
+.page-title-logo img {
+  width: 64px;
+  height: 64px;
+  padding: 0.6rem;
+  border-radius: 16px;
+  object-fit: contain;
+  background: #0f3d2e;
+  box-shadow:
+    0 6px 20px rgba(0,0,0,0.25),
+    inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+/* =========================
+   NAVIGATION — ACCUEIL
+   ========================= */
+
+.breadcrumb-wrapper {
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 22px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.18),
+    inset 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.breadcrumb-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(14,165,233,0.9),
+      rgba(34,197,94,0.9)
+    ),
+    url("assets/img/floral-emblem.png");
+
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 22px rgba(14,165,233,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.breadcrumb-home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(34,197,94,0.45);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 992px) {
+  .image-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .breadcrumb-wrapper {
+    justify-self: center;
+  }
+}
+
+/* Identité visuelle unifiée : image + dégradé */
+.image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(14,165,233,0.65),
+    rgba(34,197,94,0.65)
+  );
+  z-index: 1;
+}
+
+.image-section .overlay {
+  position: relative;
+  z-index: 2;
+}
+.proverb-box {
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+.page-title-center {
+  letter-spacing: 0.04em;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎧 AMBIENT SOUND -->
+<audio autoplay loop hidden>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_3a5e8a4f4f.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating image circle -->
+<div id="imageCircle" class="image-circle"></div>
+
+<main>
+<!-- ===== Navigation ===== -->
+
+<div class="page-title dark-background service-hero">
+  <div class="container page-title-layout">
+
+    <!-- Logo / Symbole -->
+    <div class="page-title-logo">
+      <img src="assets/img/values-symbol.png" alt="Symbole des valeurs">
+    </div>
+
+    <!-- Titre -->
+    <h1 class="page-title-center">Racines, éthique et savoir</h1>
+
+    <!-- Bouton Accueil -->
+    <div class="breadcrumb-wrapper">
+      <a href="index.html" class="breadcrumb-home">
+        <i class="bi bi-house"></i>
+        <span>Accueil</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- ===== RACINES ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+  style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+        
+      <h1>Racines, mémoire et savoir</h1>
+
+      <div class="proverb-box">
+        « Xam-xam du ñakk cosaan »
+        <span class="proverb-translation">(Le savoir ne doit jamais perdre ses racines.)</span>
+      </div>
+      <p class="proverb-context">
+        Dès l’enfance à Ngohé (Mbindo), j’ai compris que l’éducation n’est pas une
+        rupture avec la tradition, mais un prolongement conscient de l’héritage
+        transmis par la famille et la communauté.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉLEVAGE / COLLECTIF ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13"
+  style="background-image:url('https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+      <h2>Le collectif avant l’individu</h2>
+
+      <div class="proverb-box">
+        « Benn loxo du tàccu, té beeni laam du yengu »
+        <span class="proverb-translation">(Une seule main ne peut applaudir.)</span>
+      </div>
+      <p class="proverb-context">
+        Mon parcours académique est indissociable du soutien de ma famille,
+        de mon village et de mes enseignants. Aucune réussite n’est solitaire,
+        et reconnaître cette dette est un acte de lucidité et de respect.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TERRE / PATIENCE ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+  style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+      <h2>La patience comme discipline</h2>
+
+      <div class="proverb-box">
+        « Ku yàgg ci teen, baag fekk la fa »
+        <span class="proverb-translation">(Tout s’acquiert avec patience.)</span>
+      </div>
+      <p class="proverb-context">
+        Le travail de la terre m’a appris très tôt que l’effort constant,
+        même discret, produit des fruits durables. Cette logique guide encore
+        aujourd’hui mon approche scientifique et académique.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉPREUVES ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+  style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+      <h2>L’épreuve comme révélateur</h2>
+
+      <div class="proverb-box">
+        « Daqaar du wuum ku ko maccul »
+        <span class="proverb-translation">(Le tamarin n’agace pas les dents de celui qui n’en suce pas.)</span>
+      </div>
+      <p class="proverb-context">
+        Les difficultés rencontrées sur le chemin — matérielles, académiques ou
+        personnelles — ont été des lieux de clarification. C’est en affrontant
+        l’épreuve que j’ai affirmé mes choix et consolidé ma trajectoire.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉTHIQUE ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+  style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+      <h2>Souveraineté intérieure et éthique</h2>
+
+      <div class="proverb-box">
+        « Ku xeebul sa nguur di buur »
+        <span class="proverb-translation">(Celui qui se satisfait de son sort est roi.)</span>
+      </div>
+      <p class="proverb-context">
+        Même dans les périodes de précarité, j’ai choisi de ne pas sacrifier
+        mes valeurs ni mon objectif académique. Cette sobriété assumée a été
+        une force face aux tentations de l’abandon ou du compromis facile.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DISCRÉTION ===== -->
+<section class="image-section"
+  data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+  style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+  <div class="container" data-aos="fade-up">
+    <div class="overlay">
+      <h2>Discrétion et rigueur</h2>
+
+      <div class="proverb-box">
+        « Kuy yoot du sëkët »
+        <span class="proverb-translation">(Qui ne veut pas être vu ne doit pas faire de bruit.)</span>
+      </div>
+      <p class="proverb-context">
+        J’ai toujours privilégié le travail silencieux et rigoureux.
+        Les résultats, et non l’exposition, constituent pour moi
+        la véritable mesure de la valeur scientifique.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © <strong>Albert NDOUR</strong> — Racines, éthique et savoir
+</footer>
+
+<script src="assets/vendor/aos/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+
+  const circle = document.getElementById("imageCircle");
+  const sections = document.querySelectorAll(".image-section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        circle.style.backgroundImage =
+          `url('${entry.target.getAttribute("data-image")}')`;
+        circle.classList.add("active");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+    section.addEventListener("mouseenter", () => {
+      circle.style.backgroundImage =
+        `url('${section.getAttribute("data-image")}')`;
+      circle.classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>

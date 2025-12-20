@@ -1387,6 +1387,103 @@ section,
   z-index: 2;
 }
 
+.service-hero {
+  padding: 3rem 0;
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #020617 100%
+  );
+}
+
+.page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.breadcrumbs {
+  opacity: 0.8;
+}
+
+.vision-box {
+  background: linear-gradient(
+    145deg,
+    rgba(20,157,221,0.08),
+    rgba(15,23,42,0.02)
+  );
+  border-radius: 16px;
+  padding: 2rem;
+  border-left: 4px solid #149ddd;
+}
+
+.vision-box h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.vision-box p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.navmenu a .bi-tree {
+  color: #eab308; /* ocre africain */
+  font-weight: 600;
+}
+/* ===== BREADCRUMB CARDS ===== */
+.breadcrumb-cards {
+  display: flex;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-card {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 10px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: #020617;
+  background: linear-gradient(135deg, #fde68a, #eab308);
+
+  box-shadow: 0 4px 12px rgba(234,179,8,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.breadcrumb-card i {
+  font-size: 1rem;
+}
+
+/* Hover (Accueil cliquable) */
+.breadcrumb-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(234,179,8,0.45);
+  color: #020617;
+}
+
+/* Carte active (Valeurs) */
+.breadcrumb-card.active {
+  background: linear-gradient(135deg, #facc15, #ca8a04);
+  font-weight: 600;
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .breadcrumb-cards {
+    margin-top: 1rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Starter Section
 --------------------------------------------------------------*/
